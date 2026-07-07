@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjaykumar S — Aspiring Software Engineer</title>
+<meta name="description" content="Sanjaykumar S — Aspiring Software Engineer. Building modern web experiences, AI solutions, and IoT systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================= -->
+<!-- AMBIENT BACKGROUND LAYERS     -->
+<!-- ============================= -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-gradient"></div>
+  <div class="bg-vignette"></div>
+  <div class="bg-glow bg-glow--one"></div>
+  <div class="bg-glow bg-glow--two"></div>
+  <div class="bg-noise"></div>
+</div>
+
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+<!-- ============================= -->
+<!-- NAVIGATION                    -->
+<!-- ============================= -->
+<nav class="topnav" id="topnav" aria-label="Primary">
+  <a href="#" class="topnav__mark">Home</a>
+  <button class="navtoggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="topnav__links" id="navLinks">
+    <li><a href="#about" data-nav>About</a></li>
+    <li><a href="#expertise" data-nav>Expertise</a></li>
+    <li><a href="#projects" data-nav>Projects</a></li>
+    <li><a href="#experience" data-nav>Experience</a></li>
+    <li><a href="#leadership" data-nav>Leadership</a></li>
+    <li><a href="#contact" class="topnav__cta" data-nav>Let's Connect</a></li>
+  </ul>
+</nav>
+
+<!-- ============================= -->
+<!-- HERO SECTION                  -->
+<!-- ============================= -->
+<header class="hero" id="top">
+  <div class="hero__inner">
+
+    <!-- LEFT: Copy -->
+    <div class="hero__copy" data-reveal>
+      <p class="hero__eyebrow" data-reveal-item>Software Enthusiast </p>
+
+      <h1 class="hero__name" data-reveal-item>
+        <span class="hero__name-line">SANJAYKUMAR</span>
+        <span class="hero__name-line hero__name-line--accent">S</span>
+      </h1>
+
+      <p class="hero__role" data-reveal-item>Aspiring Software Engineer</p>
+
+      <p class="hero__desc" data-reveal-item>
+        I enjoy building modern web experiences, solving real-world problems, and continuously
+        learning new technologies to create impactful digital solutions — spanning frontend
+        development, Java, artificial intelligence, and embedded systems.
+      </p>
+
+      <p class="hero__tagline" data-reveal-item>
+        <span>Always Learning.</span>
+        <span>Always Building.</span>
+        <span>Always Improving.</span>
+      </p>
+
+      <div class="hero__cta" data-reveal-item>
+        <a href="#projects" class="btn btn--primary">
+          <span>View Projects</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://drive.google.com/file/d/16zsEuSCsR5H5hgJGC_T90Wv1czzyglnx/view?usp=sharing" class="btn btn--ghost" download>
+          <span>Download Resume</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 19h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="hero__socials" data-reveal-item aria-label="Social links">
+        <a href="https://github.com/Sanjaykumar-Sivakumar" class="social-icon" target="_blank" rel="noopener" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.64 1.03 2.77 0 3.97-2.34 4.84-4.57 5.1.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ssk24" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M6.94 5a2 2 0 11-4-.002 2 2 0 014 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.95-8.68-2.91V8.48z"/></svg>
+        </a>
+        <a href="https://leetcode.com/u/Sanjaykumar-Sivakumar/" class="social-icon" target="_blank" rel="noopener" aria-label="LeetCode profile">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M13.87 2.3a1.4 1.4 0 00-2 0L4.7 9.5a3.3 3.3 0 000 4.67l5.4 5.4a1.4 1.4 0 002 0 1.4 1.4 0 000-2l-5.4-5.4a.94.94 0 010-1.34l7.17-7.17a1.4 1.4 0 000-2zM9.9 15.66a1.4 1.4 0 000 2l2.3 2.3a3.3 3.3 0 004.67 0l1.65-1.66a1.4 1.4 0 00-2-2l-1.65 1.67a.94.94 0 01-1.34 0l-2.3-2.3a1.4 1.4 0 00-1.33-.01zM21 12.4h-9.3a1.4 1.4 0 000 2.8H21a1.4 1.4 0 000-2.8z"/></svg>
+        </a>
+        <!-- <a href="mailto:sanjays23112004@gmail.com" class="social-icon" target="_blank" rel="noopener" aria-label="Send email">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M3 6.5A1.5 1.5 0 014.5 5h15A1.5 1.5 0 0121 6.5v11a1.5 1.5 0 01-1.5 1.5h-15A1.5 1.5 0 013 17.5v-11z" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a> -->
+      </div>
+    </div>
+
+    <!-- RIGHT: Video stage -->
+    <div class="hero__stage" data-reveal-item>
+      <div class="stage" id="stage">
+
+        <video class="stage__bloom" id="bloomVideo" autoplay loop muted playsinline aria-hidden="true">
+          <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+
+        <div class="stage__frame" id="stageFrame">
+          <div class="stage__glare"></div>
+          <video class="stage__video" id="mainVideo" autoplay loop muted playsinline
+                 aria-label="Sanjaykumar introducing himself">
+            <source src="assets/video/hero.mp4" type="video/mp4">
+          </video>
+          <div class="stage__edge"></div>
+        </div>
+
+     
+
+        <div class="stage__controls" role="group" aria-label="Video controls">
+          <button class="ctrl-btn" id="playPauseBtn" aria-label="Pause video" aria-pressed="false">
+            <svg class="icon-pause" viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor"/><rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor"/></svg>
+            <svg class="icon-play" viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true" style="display:none"><path d="M7 5l12 7-12 7V5z" fill="currentColor"/></svg>
+          </button>
+          <button class="ctrl-btn" id="muteBtn" aria-label="Unmute video" aria-pressed="true">
+            <svg class="icon-mute" viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M17 8s2 1.6 2 4-2 4-2 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M4 4l16 16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <svg class="icon-sound" viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true" style="display:none"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><path d="M16.5 8a5 5 0 010 8M19 5.5a8.5 8.5 0 010 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="#about" class="scroll-cue" id="scrollCue" aria-label="Scroll to next section">
+    <span class="scroll-cue__line"></span>
+    <span class="scroll-cue__label">Scroll</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ============================= -->
+<!-- ABOUT ME (+ Introduction)      -->
+<!-- ============================= -->
+<section class="section" id="about" data-animate>
+  <div class="section__inner">
+    <p class="section__eyebrow">01 · About</p>
+    <h2 class="section__title">About Me</h2>
+
+    <div class="about__grid">
+      <div class="about__copy">
+        <p>
+          I am Sanjaykumar S, an aspiring Software Engineer passionate about building impactful
+          digital solutions through software development, web technologies, and artificial
+          intelligence. I recently completed my Bachelor's degree in Electronics and Communication
+          Engineering from Nandha Engineering College (Autonomous) with a CGPA of 8.78.
+        </p>
+        <p>
+          My journey began with embedded systems and electronics, but my curiosity for software
+          development inspired me to explore Java, Web Development, Artificial Intelligence, and
+          modern application development. Today, I enjoy transforming ideas into responsive web
+          applications, intelligent AI solutions, and innovative software products.
+        </p>
+        <p>
+          I strongly believe that technology should simplify lives, solve real-world problems, and
+          create meaningful user experiences. Every project I build reflects my passion for
+          continuous learning, clean coding practices, and creative problem-solving.
+        </p>
+        <p>
+          I am a self-motivated software enthusiast who enjoys learning new technologies and
+          applying them to practical projects. My interests span Frontend Development, Java
+          Programming, Artificial Intelligence, IoT, and Embedded Systems. Throughout my academic
+          journey, I have developed numerous software and hardware projects that strengthened my
+          analytical thinking, programming skills, and ability to work on real-world challenges.
+        </p>
+        <p>
+          Apart from technical skills, I have also served as a Department Secretary, Class
+          Representative, and College Yoga Student Coordinator — experiences that enhanced my
+          leadership, teamwork, communication, and organizational abilities. I aspire to contribute
+          to innovative software solutions while continuously improving my technical expertise and
+          growing as a professional Software Engineer.
+        </p>
+      </div>
+
+      <aside class="about__facts">
+        <div class="fact-card">
+          <span class="fact-card__label">Education</span>
+          <p class="fact-card__value">B.E. Electronics &amp; Communication Engineering</p>
+          <p class="fact-card__meta">Nandha Engineering College (Autonomous), Erode · 2022–2026</p>
+          <p class="fact-card__meta">CGPA 8.78 · Graduated 2026</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-card__label">Location</span>
+          <p class="fact-card__value">Erode, Tamil Nadu</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-card__label">Focus AREAS</span>
+          <p class="fact-card__value">Frontend · Java · AI · IoT &amp; Embedded Systems</p>
+        </div>
+      </aside>
+    </div>
+
+<!-- MY MISSION -->
+<div class="mission" data-animate>
+  <p class="mission__eyebrow">My Mission</p>
+  <p class="mission__statement">
+    My mission is to build modern, scalable, and user-friendly applications that solve
+    meaningful problems. I believe software should not only function efficiently but also
+    provide exceptional user experiences. I continuously challenge myself by learning emerging
+    technologies, building practical projects, solving coding problems, and exploring innovative
+    development approaches.
+  </p>
+</div>
+   
+
+    <!-- WHAT I DO -->
+    <div class="whatido" data-animate>
+      <p class="section__eyebrow section__eyebrow--inline">What I Do</p>
+      <div class="whatido__grid">
+        <article class="whatido-card">
+          <div class="whatido-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>I create responsive, modern, and interactive websites using HTML, CSS, and JavaScript with a strong focus on user experience, clean design, and performance optimization.</p>
+        </article>
+        <article class="whatido-card">
+          <div class="whatido-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M8 3H6a1 1 0 00-1 1v3.5a3 3 0 01-.88 2.12L2.7 11.1a1.5 1.5 0 000 2.12l1.42 1.42A3 3 0 015 16.76V20a1 1 0 001 1h2M16 3h2a1 1 0 011 1v3.5a3 3 0 00.88 2.12l1.42 1.48a1.5 1.5 0 010 2.12l-1.42 1.42a3 3 0 00-.88 2.12V20a1 1 0 01-1 1h-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Java Development</h3>
+          <p>I develop Java-based applications while strengthening my understanding of Object-Oriented Programming, Data Structures, Algorithms, and software engineering principles.</p>
+        </article>
+        <article class="whatido-card">
+          <div class="whatido-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Artificial Intelligence</h3>
+          <p>I build intelligent applications using Computer Vision and Machine Learning concepts, integrating Python, OpenCV, TensorFlow, and Deep Learning models.</p>
+        </article>
+        <article class="whatido-card">
+          <div class="whatido-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M9 9h6v6H9z" stroke="currentColor" stroke-width="1.6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Embedded Systems &amp; IoT</h3>
+          <p>I design and develop IoT-based smart systems using ESP32, Arduino, RFID technology, sensors, and embedded programming for automation and real-time monitoring.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- TECHNICAL EXPERTISE            -->
+<!-- ============================= -->
+<section class="section section--surface" id="expertise" data-animate>
+  <div class="section__inner">
+    <p class="section__eyebrow">02 · Skills</p>
+    <h2 class="section__title">Technical Expertise</h2>
+
+    <div class="expertise__grid expertise__grid--premium">
+
+      <div class="expertise-card expertise-card--premium" data-animate>
+        <div class="expertise-card__head">
+          <span class="expertise-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M8 6L3 12l5 6M16 6l5 6-5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="expertise-card__title">Programming Languages</h3>
+        </div>
+        <ul class="skill-grid">
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMh77GsqyGcrAXLEr1YVZkqlyoTXXA7YG3UkzqFxGG_g&s=10" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Ja</span></span>
+            <span class="skill-tile__name">Java</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAnfQITxfa-4DablE8vaBNPjPt3GpQ-myjbP2q3F0P3Q&s=10" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Py</span></span>
+            <span class="skill-tile__name">Python</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Js</span></span>
+            <span class="skill-tile__name">JavaScript</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">H5</span></span>
+            <span class="skill-tile__name">HTML5</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5jsTCu5Hhs9L25wozr0p1qUCuQUdWOqAEIIIQ4H3lPw&s=10" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">C3</span></span>
+            <span class="skill-tile__name">CSS3</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYhA-UwucjoPBJOukT0ej9OOBXod-VFpyxiNlQcYuDg&s=10" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">SQL</span></span>
+            <span class="skill-tile__name">SQL</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="expertise-card expertise-card--premium" data-animate>
+        <div class="expertise-card__head">
+          <span class="expertise-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M14.7 3.3a1 1 0 011.4 0l4.6 4.6a1 1 0 010 1.4L10 20l-6 1 1-6L14.7 3.3z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="expertise-card__title">Tools &amp; Platforms</h3>
+        </div>
+        <ul class="skill-grid">
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://cdn.simpleicons.org/git/F05032" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Gi</span></span>
+            <span class="skill-tile__name">Git</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://cdn.simpleicons.org/github/E6EDF3" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Gh</span></span>
+            <span class="skill-tile__name">GitHub</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Visual_Studio_Code_0.10.1_icon.png" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">VS</span></span>
+            <span class="skill-tile__name">VS Code</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://cdn.simpleicons.org/androidstudio/3DDC84" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">AS</span></span>
+            <span class="skill-tile__name">Android Studio</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://cdn.simpleicons.org/arduino/00979D" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Ar</span></span>
+            <span class="skill-tile__name">Arduino IDE</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://cdn.simpleicons.org/jupyter/F37626" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Jp</span></span>
+            <span class="skill-tile__name">Jupyter Notebook</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPeazV3iapHNdXZuD8HRdWNCuhdPCkN-oVO2cjk5qdqg&s=10" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">My</span></span>
+            <span class="skill-tile__name">MySQL</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="expertise-card expertise-card--premium" data-animate>
+        <div class="expertise-card__head">
+          <span class="expertise-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M12 2l2.2 5.8L20 10l-5.8 2.2L12 18l-2.2-5.8L4 10l5.8-2.2L12 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 class="expertise-card__title">AI &amp; Productivity Tools</h3>
+        </div>
+        <ul class="skill-grid">
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwcfVZwMA-BrTnstzRiclUmiKybkR-ToNWsdyMwHEM65a_aA3B9OS49U&s=10" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Cg</span></span>
+            <span class="skill-tile__name">ChatGPT</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://cdn.simpleicons.org/claude/D97757" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Cl</span></span>
+            <span class="skill-tile__name">Claude AI</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Ge</span></span>
+            <span class="skill-tile__name">Gemini</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWae6VBLR8N8xk9wrSf05qp3617ajHEKbEUXFgL-_nfA&s=10" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Lo</span></span>
+            <span class="skill-tile__name">Lovable AI</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUQBMqrJZIsCuCoLRS8sjYlhDXst3R39ObU2xayUosrw&s" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Lo</span></span>
+            <span class="skill-tile__name">Appilix</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://cdn.simpleicons.org/framer/0055FF" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Fr</span></span>
+            <span class="skill-tile__name">Framer AI</span>
+          </li>
+          <li class="skill-tile">
+            <span class="skill-tile__logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgI8zbd_XaUfdEiApJXwMkQFTnHbbPzcRInkT_BHbiCw&s=10" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="skill-tile__fallback" aria-hidden="true">Ca</span></span>
+            <span class="skill-tile__name">Canva</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- FEATURED PROJECTS              -->
+<!-- ============================= -->
+<section class="section" id="projects" data-animate>
+  <div class="section__inner">
+    <p class="section__eyebrow">03 · Work</p>
+    <h2 class="section__title">My Projects</h2>
+
+    <div class="projects__grid">
+
+      <article class="project-card" data-animate>
+        <div class="project-card__media">
+          <img class="project-card__image" src="assets/images/projects/cgpa-calculator.jpg" alt="Academic CGPA/GPA Calculator preview" loading="lazy">
+        </div>
+        <div class="project-card__body">
+          <h3>Academic CGPA/GPA Calculator</h3>
+          <p>Designed and developed a responsive academic calculator that enables students from multiple departments to calculate GPA and CGPA accurately.</p>
+          <ul class="project-card__features">
+            <li>Department-wise grading system</li>
+            <li>Current semester GPA calculation</li>
+            <li>Overall CGPA calculation</li>
+            <li>Local storage support</li>
+            <li>Responsive, user-friendly interface</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Sanjaykumar-Sivakumar/CGPA_Deploy" target="_blank" rel="noopener" class="link-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.64 1.03 2.77 0 3.97-2.34 4.84-4.57 5.1.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              Click to View 👆
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="project-card__media">
+          <img class="project-card__image" src="assets/images/projects/primefit.jpg" alt="PrimeFit offline fitness application preview" loading="lazy">
+        </div>
+        <div class="project-card__body">
+          <h3>PrimeFit — Offline Fitness Application</h3>
+          <p>Developed an offline fitness mobile application using AI-assisted development tools to provide an efficient workout tracking experience without requiring internet connectivity.</p>
+          <ul class="project-card__features">
+            <li>Offline functionality</li>
+            <li>AI-assisted development</li>
+            <li>Mobile-first interface</li>
+            <li>Modern user experience</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">Lovable AI</span><span class="tag">Applifix</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Sanjaykumar-Sivakumar/PrimeFit" target="_blank" rel="noopener" class="link-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.64 1.03 2.77 0 3.97-2.34 4.84-4.57 5.1.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              Click to View 👆
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="project-card__media">
+          <img class="project-card__image" src="assets/images/projects/facial-expression-recognition.jpg" alt="Facial Expression Recognition using OpenCV preview" loading="lazy">
+        </div>
+        <div class="project-card__body">
+          <h3>Facial Expression Recognition Using OpenCV</h3>
+          <p>Built a real-time facial emotion detection system capable of recognizing multiple human emotions using Computer Vision and Deep Learning.</p>
+          <ul class="project-card__features">
+            <li>Real-time camera detection</li>
+            <li>Emotion classification</li>
+            <li>OpenCV integration</li>
+            <li>Deep learning model</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">TensorFlow</span><span class="tag">Keras</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Sanjaykumar-Sivakumar/Facial_Expression_Recognition" target="_blank" rel="noopener" class="link-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.64 1.03 2.77 0 3.97-2.34 4.84-4.57 5.1.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              Click to View 👆
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="project-card__media">
+          <img class="project-card__image" src="assets/images/projects/dual-auth-attendance.jpg" alt="Dual Authentication-Based Attendance System preview" loading="lazy">
+          <span class="project-card__badge">Patent Published</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Dual Authentication-Based Attendance System</h3>
+          <p>Developed a secure attendance management system that combines RFID authentication with R307 fingerprint verification for improved security and accuracy.</p>
+          <ul class="project-card__features">
+            <li>RFID authentication</li>
+            <li>Fingerprint verification</li>
+            <li>Automated attendance</li>
+            <li>Patent Published — Application No. 202541072283 (2025)</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">RFID</span><span class="tag">R307 Fingerprint</span><span class="tag">Embedded Systems</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Sanjaykumar-Sivakumar/DUAL---AUTHENTICATION-BASED-ATTENDANCE-SYSTEM" target="_blank" rel="noopener" class="link-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.64 1.03 2.77 0 3.97-2.34 4.84-4.57 5.1.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              Click to View 👆
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="project-card__media">
+          <img class="project-card__image" src="assets/images/projects/fire-alert-system.jpg" alt="Smart GSM-Free Fire Alert and Monitoring System preview" loading="lazy">
+          <span class="project-card__badge">AIP Conference Proceedings</span>
+        </div>
+        <div class="project-card__body">
+          <h3>Smart GSM-Free Fire Alert &amp; Monitoring System</h3>
+          <p>Designed an embedded fire monitoring system capable of detecting fire conditions and generating real-time emergency notifications without relying on GSM communication.</p>
+          <ul class="project-card__features">
+            <li>Real-time fire detection</li>
+            <li>Emergency alert notifications</li>
+            <li>Published in AIP Conference Proceedings</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">Embedded Systems</span><span class="tag">Sensors</span><span class="tag">IoT</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Sanjaykumar-Sivakumar/Smart-GSM-Free-Fire-Alert-and-Monitoring-System" target="_blank" rel="noopener" class="link-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.64 1.03 2.77 0 3.97-2.34 4.84-4.57 5.1.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              Click to View 👆
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-animate>
+        <div class="project-card__media">
+          <img class="project-card__image" src="assets/images/projects/mini-cv-projects.jpg" alt="Mini Computer Vision Projects preview" loading="lazy">
+        </div>
+        <div class="project-card__body">
+          <h3>Mini Computer Vision Projects</h3>
+          <p>Developed multiple OpenCV applications, including moving object detection, mobile camera-based emotion detection, and real-time video processing.</p>
+          <ul class="project-card__features">
+            <li>Moving Object Detection</li>
+            <li>Mobile Camera-Based Emotion Detection — integrated IP Webcam with OpenCV</li>
+            <li>Real-time video processing</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">Python</span><span class="tag">OpenCV</span>
+          </div>
+          <div class="project-card__links">
+            <a href="https://github.com/Sanjaykumar-Sivakumar/Open-CV-Projects" target="_blank" rel="noopener" class="link-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.5-1.11-1.5-.9-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.15-4.56-5.11 0-1.13.39-2.05 1.03-2.77-.1-.26-.45-1.32.1-2.75 0 0 .84-.28 2.75 1.05a9.3 9.3 0 015 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.64 1.03 2.77 0 3.97-2.34 4.84-4.57 5.1.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              Click to View 👆
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- PROFESSIONAL EXPERIENCE        -->
+<!-- ============================= -->
+<section class="section section--surface" id="experience" data-animate>
+  <div class="section__inner">
+    <p class="section__eyebrow">04 · Experience</p>
+    <h2 class="section__title">Professional Experience &amp; Internships</h2>
+
+    <ol class="timeline">
+      <li class="timeline__item" data-animate>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__date">May 2025</span>
+          <h3>Nuclear Power Plant Training</h3>
+          <p class="timeline__org">NPCIL — Kudankulam Nuclear Power Project 1 &amp; 2</p>
+          <p>Received practical exposure to instrumentation systems, industrial automation, maintenance procedures, and control systems in one of India's largest nuclear power plants during a 14-day training in the Control Maintenance Unit.</p>
+        </div>
+      </li>
+      <li class="timeline__item" data-animate>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__date">Jan 2025</span>
+          <h3>Embedded IoT Internship</h3>
+          <p class="timeline__org">Zeekers Technology Solutions Pvt. Ltd.</p>
+          <p>Completed industry training in Embedded IoT, PCB Design, and PCB Fabrication while gaining practical experience in industrial product development during a 2-week internship.</p>
+        </div>
+      </li>
+      <li class="timeline__item" data-animate>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__date">Feb 2024</span>
+          <h3>In-Plant Training — Embedded Systems &amp; Sensor Integration</h3>
+          <p class="timeline__org">Zeekers Technology Solutions</p>
+          <p>Gained hands-on exposure to Embedded Systems and Sensor Integration during a 7-day in-plant training.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- CERTIFICATIONS                 -->
+<!-- ============================= -->
+<section class="section" id="certifications" data-animate>
+  <div class="section__inner">
+    <p class="section__eyebrow">05 · Certifications</p>
+    <h2 class="section__title">Certifications</h2>
+
+    <div class="cert__grid">
+      <div class="cert-card" data-animate>
+        <div class="cert-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M12 2l3 6 6.6.9-4.8 4.6 1.1 6.5L12 16.9 6.1 20l1.1-6.5-4.8-4.6L9 8l3-6z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Introduction to IoT</h3>
+        <p class="cert-card__org">NPTEL</p>
+        <span class="cert-card__grade">Elite + Silver 🥈</span>
+        <a href="https://drive.google.com/file/d/1YxVnbVJ2lTC1C01j3WvtTr3upZgDMJ8Z/view?usp=sharing" target="_blank" rel="noopener" class="cert-card__btn">
+          <span>Click to View 👆</span>
+          <svg class="cert-card__btn-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="cert-card" data-animate>
+        <div class="cert-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M7 17a4 4 0 010-8 5 5 0 019.6-1.5A4.5 4.5 0 0117.5 17H7z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Cloud Computing</h3>
+        <p class="cert-card__org">NPTEL</p>
+        <span class="cert-card__grade">Elite 🥉</span>
+        <a href="https://drive.google.com/file/d/1UdzEonpz-1xMr-1GfHTbaNiHaxBTmA_W/view?usp=drive_link" target="_blank" rel="noopener" class="cert-card__btn">
+          <span>Click to View 👆</span>
+          <svg class="cert-card__btn-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="cert-card" data-animate>
+        <div class="cert-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M8 3H6a1 1 0 00-1 1v3.5a3 3 0 01-.88 2.12L2.7 11.1a1.5 1.5 0 000 2.12l1.42 1.42A3 3 0 015 16.76V20a1 1 0 001 1h2M16 3h2a1 1 0 011 1v3.5a3 3 0 00.88 2.12l1.42 1.48a1.5 1.5 0 010 2.12l-1.42 1.42a3 3 0 00-.88 2.12V20a1 1 0 01-1 1h-2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Java Programming Fundamentals</h3>
+        <p class="cert-card__org">Infosys Springboard</p>
+        <span class="cert-card__grade">May 14, 2024</span>
+        <a href="https://drive.google.com/file/d/15VxMXMwfqV8EnJggUP_O5yW0t7Ul5dKm/view?usp=sharing" target="_blank" rel="noopener" class="cert-card__btn">
+          <span>Click to View 👆</span>
+          <svg class="cert-card__btn-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="cert-card" data-animate>
+        <div class="cert-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Basics of Python</h3>
+        <p class="cert-card__org">Infosys Springboard</p>
+        <span class="cert-card__grade">May 21, 2024</span>
+        <a href="https://drive.google.com/file/d/16cVN9R5k9LJjlqsYel4w4YYC5cMdejfZ/view?usp=sharing" target="_blank" rel="noopener" class="cert-card__btn">
+          <span>Click to View 👆</span>
+          <svg class="cert-card__btn-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- ACHIEVEMENTS                   -->
+<!-- ============================= -->
+<section class="section section--surface" id="achievements" data-animate>
+  <div class="section__inner">
+    <p class="section__eyebrow">06 · Achievements</p>
+    <h2 class="section__title">Achievements</h2>
+
+    <div class="achieve__grid achieve__grid--premium">
+      <div class="achieve-card achieve-card--premium" data-animate>
+        <div class="achieve-card__glow" aria-hidden="true"></div>
+        <div class="achieve-card__top">
+          <span class="achieve-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><circle cx="12" cy="8" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M8.2 12.6L6 21l6-3 6 3-2.2-8.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="achieve-card__mark">01</span>
+        </div>
+        <p>NPTEL TOP 5% ELITE + SILVER CERTIFICATION IN IOT- 2024</p>
+      </div>
+      <div class="achieve-card achieve-card--premium" data-animate>
+        <div class="achieve-card__glow" aria-hidden="true"></div>
+        <div class="achieve-card__top">
+          <span class="achieve-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M7 17a4 4 0 010-8 5 5 0 019.6-1.5A4.5 4.5 0 0117.5 17H7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="achieve-card__mark">02</span>
+        </div>
+        <p>Elite Certification in Cloud Computing - 2025</p>
+      </div>
+       <div class="achieve-card achieve-card--premium" data-animate>
+        <div class="achieve-card__glow" aria-hidden="true"></div>
+        <div class="achieve-card__top">
+          <span class="achieve-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M9 3h6l1 4h3v3l-3 1-1 9H9l-1-9-3-1V7h3l1-4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="achieve-card__mark">03</span>
+        </div>
+        <p>₹10,000 CASH PRIZE WINNER IN QUIZ COMPETITION - 2022</p>
+      </div>
+       <div class="achieve-card achieve-card--premium" data-animate>
+        <div class="achieve-card__glow" aria-hidden="true"></div>
+        <div class="achieve-card__top">
+          <span class="achieve-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M9 3h6l1 4h3v3l-3 1-1 9H9l-1-9-3-1V7h3l1-4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="achieve-card__mark">04</span>
+        </div>
+        <p>NATIONAL LEVEL SRINIVASA RAMANUJAN MATHEMATICAL COMPETITION: FINALIST - 2024, 2025 & 2026</p>
+      </div>
+      <div class="achieve-card achieve-card--premium" data-animate>
+        <div class="achieve-card__glow" aria-hidden="true"></div>
+        <div class="achieve-card__top">
+          <span class="achieve-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M9 3h6l1 4h3v3l-3 1-1 9H9l-1-9-3-1V7h3l1-4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="achieve-card__mark">05</span>
+        </div>
+        <p>₹2000 - CASH PRICE ON ROBO RACE - 2026</p>
+      </div>
+       <div class="achieve-card achieve-card--premium" data-animate>
+        <div class="achieve-card__glow" aria-hidden="true"></div>
+        <div class="achieve-card__top">
+          <span class="achieve-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M9 3h6l1 4h3v3l-3 1-1 9H9l-1-9-3-1V7h3l1-4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="achieve-card__mark">06</span>
+        </div>
+        <p>Patent Published for Dual Authentication-Based Attendance System - 2026</p>
+      </div>
+      <div class="achieve-card achieve-card--premium" data-animate>
+        <div class="achieve-card__glow" aria-hidden="true"></div>
+        <div class="achieve-card__top">
+          <span class="achieve-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M4 19V5a1 1 0 011-1h9l6 6v9a1 1 0 01-1 1H5a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M14 4v6h6" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="achieve-card__mark">07</span>
+        </div>
+        <p>Research Published in AIP Conference Proceedings - 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- LEADERSHIP                     -->
+<!-- ============================= -->
+<section class="section" id="leadership" data-animate>
+  <div class="section__inner">
+    <p class="section__eyebrow">07 · Leadership</p>
+    <h2 class="section__title">Leadership</h2>
+    <p class="section__lede">
+      Leadership has always been an important part of my academic journey. These roles
+      strengthened my leadership, communication, adaptability, teamwork, and decision-making
+      skills.
+    </p>
+
+    <ol class="timeline timeline--leadership">
+      <li class="timeline__item" data-animate>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__date">2026 – Present</span>
+          <h3>Department Secretary</h3>
+          <p>I coordinate student activities and departmental events while promoting teamwork and collaboration.</p>
+        </div>
+      </li>
+      <li class="timeline__item" data-animate>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__date">2023 – 2025</span>
+          <h3>Class Representative</h3>
+          <p>I served as the communication bridge between students and faculty, helping improve academic coordination and classroom management.</p>
+        </div>
+      </li>
+      <li class="timeline__item" data-animate>
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__date">2024 – 2025</span>
+          <h3>College Yoga Student Coordinator</h3>
+          <p>I organized events, motivated student participation, and contributed to promoting health and wellness across campus.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- DEVELOPMENT PHILOSOPHY         -->
+<!-- ============================= -->
+<section class="section section--surface" id="philosophy" data-animate>
+  <div class="section__inner section__inner--narrow">
+    <p class="section__eyebrow">08 · Philosophy</p>
+    <h2 class="section__title">My Development Philosophy</h2>
+    <p class="philosophy__quote">
+      "Software development is more than writing code — it is about solving problems, creating
+      value, and continuously improving through learning."
+    </p>
+    <p>
+      Every application I build is an opportunity to explore new technologies, improve my
+      engineering skills, and create meaningful solutions that positively impact users. My goal is
+      to become a Software Engineer who develops reliable, scalable, and user-focused applications
+      while embracing lifelong learning and innovation.
+    </p>
+  </div>
+</section>
+
+<!-- ============================= -->
+<!-- LET'S CONNECT / CONTACT        -->
+<!-- ============================= -->
+<section class="section" id="contact" data-animate>
+  <div class="section__inner section__inner--narrow">
+    <p class="section__eyebrow">09 · Contact</p>
+    <h2 class="section__title">Let's Connect</h2>
+
+    <div class="contact-card" data-animate>
+      <p>
+        I am actively seeking opportunities as a Software Engineer, Frontend Developer, or Java
+        Developer, where I can contribute to impactful projects while growing alongside talented
+        teams. If you're looking for a passionate developer who enjoys learning, building
+        innovative solutions, and solving challenging problems, I would be delighted to connect and
+        collaborate.
+      </p>
+
+      <div class="contact-card__actions">
+        <a href="mailto:sanjays23112004@gmail.com" class="btn btn--primary">
+          <span>Email Me</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://drive.google.com/file/d/16zsEuSCsR5H5hgJGC_T90Wv1czzyglnx/view?usp=sharing" class="btn btn--ghost" download>
+          <span>Download Resume</span>
+        </a>
+      </div>
+
+      <div class="contact-card__meta">
+        <a href="mailto:sanjays23112004@gmail.com">sanjays23112004@gmail.com</a>
+        <span aria-hidden="true">·</span>
+        <a href="tel:+919384777909">+91 93847 77909</a>
+        <span aria-hidden="true">·</span>
+        <span>Erode, Tamil Nadu</span>
+      </div>
+
+      <div class="contact-card__socials">
+        <a href="https://github.com/Sanjaykumar-Sivakumar" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/ssk24" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://leetcode.com/u/Sanjaykumar-Sivakumar/" target="_blank" rel="noopener">LeetCode</a>
+        <a href="https://www.naukri.com/code360/profile/9a279f9f-63ca-42db-8cca-66db0d091d0a" target="_blank" rel="noopener">Naukri Code360</a>
+      </div>
+    </div>
+
+    <p class="thankyou">
+      Thank you for taking the time to explore my portfolio. I appreciate your interest in my
+      work and look forward to connecting, collaborating, and contributing to innovative software
+      development projects in the future.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================= -->
+<!-- FOOTER                         -->
+<!-- ============================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="footer__mark">SANJAYKUMAR S</span>
+      <p>Aspiring Software Enthusiast</p>
+    </div>
+    <ul class="footer__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="footer__socials">
+      <a href="https://github.com/Sanjaykumar-Sivakumar" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+      <a href="https://www.linkedin.com/in/ssk24" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      <a href="https://leetcode.com/u/Sanjaykumar-Sivakumar/" target="_blank" rel="noopener" aria-label="LeetCode">LeetCode</a>
+      <a href="mailto:sanjays23112004@gmail.com" aria-label="Email">Email</a>
+    </div>
+  </div>
+  <p class="footer__copy">&copy; Sanjaykumar S</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
