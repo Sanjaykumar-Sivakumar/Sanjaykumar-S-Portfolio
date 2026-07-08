@@ -1106,6 +1106,7 @@ img, video { max-width: 100%; display: block; }
   gap: 0.5rem;
   font-size: 0.85rem;
   font-weight: 600;
+  margin: auto;
   padding: 0.6rem 1.05rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.05);
