@@ -759,6 +759,8 @@ img, video { max-width: 100%; display: block; }
   line-height: 1.8;
   font-size: 1.02rem;
   margin-bottom: 1.15rem;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .about__copy p:last-child { margin-bottom: 0; }
