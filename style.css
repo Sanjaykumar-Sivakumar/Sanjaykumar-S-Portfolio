@@ -142,8 +142,8 @@ img, video { max-width: 100%; display: block; }
   background: rgba(5, 7, 10, 0);
   border-bottom: 1px solid transparent;
   backdrop-filter: blur(0px);
-  transition: background 0.5s var(--ease-soft), border-color 0.5s var(--ease-soft), backdrop-filter 0.5s var(--ease-soft);
   opacity: 0;
+  transition: 0.1s ease;
   animation: fadeDown 0.9s var(--ease-expensive) 0.15s forwards;
 }
 
@@ -151,7 +151,6 @@ img, video { max-width: 100%; display: block; }
   background: rgba(5, 7, 10, 0.7);
   border-bottom-color: var(--border);
   backdrop-filter: blur(10px);
-  
 }
 
 .topnav__mark {
