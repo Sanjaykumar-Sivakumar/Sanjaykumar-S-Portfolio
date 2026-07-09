@@ -150,7 +150,8 @@ img, video { max-width: 100%; display: block; }
 .topnav.is-scrolled {
   background: rgba(5, 7, 10, 0.7);
   border-bottom-color: var(--border);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(10px);
+  
 }
 
 .topnav__mark {
@@ -2087,7 +2088,7 @@ img, video { max-width: 100%; display: block; }
   font-weight: 600;
   backdrop-filter: blur(6px);
   transition: transform 0.35s var(--ease-soft), border-color 0.35s var(--ease-soft),
-    background 0.35s var(--ease-soft), color 0.35s var(--ease-soft);
+  background 0.35s var(--ease-soft), color 0.35s var(--ease-soft);
 }
 
 .why-choose__item svg { color: var(--accent-2); flex-shrink: 0; }
